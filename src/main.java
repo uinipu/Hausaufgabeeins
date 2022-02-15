@@ -16,5 +16,9 @@ public class main {
         //System.out.println(ex.drei());
         //System.out.println(ex.vier());
         */
+
+        Aufgabe3 hai=new Aufgabe3();
+        //hai.unu();
+        hai.doi();
     }
 }
