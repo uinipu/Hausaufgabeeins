@@ -19,6 +19,8 @@ public class main {
 
         Aufgabe3 hai=new Aufgabe3();
         //hai.unu();
-        hai.doi();
+        //hai.doi();
+        //hai.trei();
+        hai.patru();
     }
 }

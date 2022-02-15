@@ -78,26 +78,64 @@ public class Aufgabe3 {
         }
 
         int p=0;
-        int [] result=new int[11];
-        result[0]=-1;
-        for(int i=n;i>0;i--){
-            int a=x[i]+y[i]+p;
-            if(a>9){
-                p=a/10;
-                a=a%10;
+        int [] result=new int[10];
+        for(int i=n-1;i>=0;i--){
+            //int a=x[i]-y[i];
+            if(x[i]-y[i]<0){
+                x[i-1]-=1;
+                int b = 10+x[i];
+                result[i]=b-y[i];
             }
             else
-                p=0;
-            result[i]=a;
+                result[i]=x[i]-y[i];
         }
-        if(p!=0){
-            result[0]=p;
-            for(int i=0;i<=n;i++)
+
+        if(result[0]!=0){
+            for(int i=0;i<n;i++)
                 System.out.print(result[i]);
         }
         else{
-            for(int i=1;i<=n;i++)
+            for(int i=1;i<n;i++)
                 System.out.print(result[i]);
         }
+    }
+
+    public void trei() {
+        System.out.println("Wie viele Ziffern hat die Zahl?");
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+
+        System.out.println("Die Ziffern der ersten Zahl sind:");
+        int[] x = new int[10];
+        for (int i = 0; i < n; i++) {
+            x[i] = s.nextInt();
+        }
+
+        int a;
+        System.out.println("Die zweite Zahl ist:");
+        a=s.nextInt();
+
+        int p=0;
+        int [] result=new int[10];
+        for(int i=n-1;i>=0;i--){
+            if(x[i]*a+p>10){
+                result[i]=(x[i]*a+p)%10;
+                p=(x[i]*a+p)/10;
+            }
+            else{
+                result[i]=x[i]*a+p;
+                p=0;
+            }
+
+        }
+
+
+        for(int i=0;i<n;i++)
+            System.out.print(result[i]);
+
+    }
+
+    public void patru(){
+
     }
 }
