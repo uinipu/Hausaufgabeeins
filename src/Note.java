@@ -12,9 +12,9 @@ public class Note {
     }
 
     public boolean istausreichend(){
-        if(this.wert>=40)
-            return false;
-        return true;
+        if(this.aufrunden()>=40)
+            return true;
+        return false;
     }
 
     public int nachstv5(int x){
