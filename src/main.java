@@ -1,5 +1,5 @@
 public class main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         /*Aufgabe1 bsp = new Aufgabe1();
 
         //bsp.a1ub1();
@@ -17,10 +17,19 @@ public class main {
         //System.out.println(ex.vier());
         */
 
+        /*
         Aufgabe3 hai=new Aufgabe3();
         //hai.unu();
         //hai.doi();
         //hai.trei();
-        hai.patru();
+        //hai.patru();
+        */
+
+
+        Aufgabe4 gata = new Aufgabe4();
+        //System.out.println(gata.unos());
+        //System.out.println(gata.dos());
+        //System.out.println(gata.tres());
+        gata.cuatro();
     }
 }

@@ -48,6 +48,7 @@ public class Aufgabe3 {
                 p = 0;
             result[i] = a;
         }
+        System.out.println("Die Summe der 2 Zahlen ist:");
         if (p != 0) {
             result[0] = p;
             for (int i = 0; i <= n; i++)
@@ -86,7 +87,7 @@ public class Aufgabe3 {
             } else
                 result[i] = x[i] - y[i];
         }
-
+        System.out.println("Die Differenz der 2 Zahlen ist:");
         if (result[0] != 0) {
             for (int i = 0; i < n; i++)
                 System.out.print(result[i]);
@@ -123,7 +124,7 @@ public class Aufgabe3 {
             }
 
         }
-
+        System.out.println("Die Multiplikation der 2 Zahlen ist:");
 
         for (int i = 0; i < n; i++)
             System.out.print(result[i]);
@@ -146,15 +147,15 @@ public class Aufgabe3 {
         a = s.nextInt();
 
         int[] result = new int[10];
-        int p=0;
+        int p = 0;
 
         for (int i = 0; i < n; i++) {
-            result[i]=(p*10+x[i])/a;
-            p=x[i]%a;
+            result[i] = (p * 10 + x[i]) / a;
+            p = x[i] % a;
         }
+        System.out.println("Die Division der 2 Zahlen ist:");
 
-
-       for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.print(result[i]);
         }
     }
